@@ -1,17 +1,9 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
 import time
 
 st.title('Streamlit 入門')
 
 
-df = pd.DataFrame(
-    np.random.rand(100, 2) / [50, 50] + [35.69, 139.70],
-    columns=['lat', 'lon']
-)
-if st.checkbox('地図'):
-    st.map(df)
 
 option = st.selectbox(
     "好きな数字を教えてください。",
